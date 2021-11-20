@@ -1,0 +1,39 @@
+.hero{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  background: linear-gradient(0deg, rgba(14, 21, 58, 0.79), rgba(14, 21, 58, 0.79)), url(../../../assets/images/church.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  color: white;
+  font-family: 'Poppins';
+
+  .slide{
+    text-align: center;
+    margin-bottom: -250px;
+
+    .headline{
+      font-weight: bold;
+      font-size: 60px !important;
+    }
+
+    button{
+      color: white;
+      width: 200px;
+      margin-top: 20px;
+      height: fit-content;
+      padding: 5px;
+      font-size: 18px;
+      border: 1px solid white;
+      background: none;
+    }
+  }
+
+}

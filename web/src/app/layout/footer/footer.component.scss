@@ -1,0 +1,22 @@
+footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #0E153A;
+  text-align: center;
+  margin-top: 50px;
+
+  .heading{
+    font-weight: bold;
+    font-family: 'Oswald';
+    margin: 15px;
+  }
+
+  p{
+    font-size: 13px;
+  }
+}
+

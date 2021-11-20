@@ -1,0 +1,46 @@
+#header{
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 85px;
+  padding: 10px;
+  nav{
+    height: 100%;
+
+    #logo{
+      display: flex;
+      align-items: center;
+      float: left;
+
+      #logo-text{
+        font-family: 'Oswald';
+        font-size: 18px;
+        margin-left: 20px;
+        color: #0E153A;
+
+        .top{
+          font-weight: bold;
+        }
+
+        .bottom{
+          letter-spacing: 0.16em;
+          font-size: 15px;
+        }
+      }
+    }
+
+    #menu{
+      float: right;
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      .line{
+        width: 30px;
+        height: 2px;
+        margin: 5px;
+        background: #0E153A;
+      }
+    }
+  }
+}
