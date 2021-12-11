@@ -13,12 +13,46 @@
         </div>
       </span>
     </div>
-    <div id="menu">
-      <span>
-        <hr class="line" [ngStyle]="{ background: color}">
-        <hr class="line" [ngStyle]="{ background: color}">
-        <hr class="line" [ngStyle]="{ background: color}">
+    <div  [@burgerMenu]='state' id="menu" [ngClass]=" straight ? 'straight' : 'angled' ">
+      <span  (click)="openClose()" style="z-index:1">
+        <hr id="line1" class="line" [ngStyle]="{ background: color}">
+        <hr id="line2" class="line" [ngStyle]="{ background: color}">
+        <hr id="line3" class="line" [ngStyle]="{ background: color}">
       </span>
+      <div id="glass" class="glass-menu" [ngStyle]="{ display: display}">
+        <div>
+          <div style="display: flex; flex-wrap: nowrap; justify-content: center;">
+            <hr style="width: 25px; height: 2px; color: #0E153A;">
+            <h4 style="color: #0E153A; letter-spacing: 1.5px; font-weight: bold;">Links</h4>
+            <hr style="width: 25px; height: 2px; color: #0E153A;">
+          </div>
+          <li class="menu-item">
+            <a href="" [ngStyle]="{ color: color}"> About Us</a>
+          </li>
+          <li class="menu-item">
+            <a href="" [ngStyle]="{ color: color}"> Events </a>
+          </li>
+          <li class="menu-item">
+            <a href="" [ngStyle]="{ color: color}"> Youth </a>
+          </li>
+          <li class="menu-item">
+            <a href="" [ngStyle]="{ color: color}"> Men </a>
+          </li>
+          <li class="menu-item">
+            <a href="" [ngStyle]="{ color: color}"> Ladies </a>
+          </li>
+          <div style="margin-top: 60px; display: flex; flex-wrap: nowrap; justify-content: center;">
+            <hr style="width: 25px; height: 2px; color: #0E153A;">
+            <h4 style="color: #0E153A; letter-spacing: 1.5px; font-weight: bold;">Social Media</h4>
+            <hr style="width: 25px; height: 2px; color: #0E153A;">
+          </div>
+          <div style="display: flex; flex-wrap: nowrap; justify-content: center; margin-top: 0px;">
+            <img src="../../../assets/images/whatsapp.png" height="30px" style="margin: 10px;">
+            <img src="../../../assets/images/facebook.png" height="30px" style="margin: 10px;">
+            <img src="../../../assets/images/youtube.png" height="30px" style="margin: 10px;">
+          </div>
+        </div>
+      </div>
     </div>
   </nav>
 </header>
