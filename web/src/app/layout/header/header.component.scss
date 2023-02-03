@@ -2,6 +2,7 @@
   z-index: 1;
   position: absolute;
   width: 100%;
+  background-color: white;
   height: 85px;
   padding: 10px;
   nav{
@@ -15,7 +16,7 @@
       #logo-text{
         font-family: 'Oswald';
         font-size: 18px;
-        margin-left: 20px;
+        margin-left: 10px;
         color: #0E153A;
 
         .top{
@@ -25,8 +26,13 @@
         .bottom{
           letter-spacing: 0.16em;
           font-size: 15px;
+          margin-top: -5px;
         }
       }
+    }
+
+    #logo:hover{
+      cursor: pointer;
     }
 
     #menu{

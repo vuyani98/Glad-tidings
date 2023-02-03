@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterViewInit} from '@angular/core';
-import { ActivatedRoute} from '@angular/router';
+import { ActivatedRoute, ActivationEnd, Router} from '@angular/router';
 import { LayoutService } from '../layout.service';
 import { PagesService } from 'src/app/pages/pages.service';
 import { trigger, state, style, animate, transition, query, keyframes, stagger, group } from '@angular/animations';
@@ -104,7 +104,7 @@ export class HeaderComponent implements AfterViewInit {
   straight: boolean = true;
   display: string = 'none';
 
-  constructor( private pages : PagesService, private service: LayoutService) { }
+  constructor(private route: Router, private pages : PagesService, private service: LayoutService) { }
 
   ngAfterViewInit(): void {
 
@@ -112,14 +112,21 @@ export class HeaderComponent implements AfterViewInit {
       this.setColor()
     }, 1000)
 
+    this.route.events.subscribe(event => {
+      console.log(event)
+      this.state = 'straight';
+      this.straight = true;
+      this.display = 'none'
+    })
+
   }
 
   setColor(){
     if (this.pages.getLocation() === "/" || this.pages.getLocation() === "/about"){
-      this.color = "white"
+      this.color = "black"
     }
     else{
-      this.color="#0E153A"
+      this.color="black"
     }
   }
 
@@ -137,5 +144,9 @@ export class HeaderComponent implements AfterViewInit {
       this.straight = true;
       this.display = 'none';
     }
+  }
+
+  go_home(){
+    this.route.navigateByUrl('/')
   }
 }

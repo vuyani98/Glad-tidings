@@ -6,8 +6,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-end;
-  background: linear-gradient(0deg, rgba(14, 21, 58, 0.79), rgba(14, 21, 58, 0.79)), url(../../../assets/images/church.jpg);
+  align-items: center;
+  background: radial-gradient(#113a5587, #000000e8), url(../../../assets/images/smiles.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -17,23 +17,108 @@
 
   .slide{
     text-align: center;
-    margin-bottom: -250px;
+    margin-right: 25%;
+    margin-left: 25%;
+    width: auto;
 
     .headline{
-      font-weight: bold;
+      font-family: "Playfair Display";
       font-size: 60px !important;
+
     }
 
     button{
       color: white;
-      width: 200px;
+      width: 170px;
       margin-top: 20px;
       height: fit-content;
       padding: 5px;
-      font-size: 18px;
-      border: 1px solid white;
-      background: none;
+      font-size: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.062);
+      border-radius: 20px;
+      background: #439bc5;
     }
   }
 
+}
+
+.main-body{
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  .videos{
+    display: flex;
+
+    .video{
+      background-color: #6E6658;
+      height: 180px;
+      width: 250px;
+      margin-right: 20px;
+
+      .thumbnail{
+        background: linear-gradient( #112d32bd, #112D32bd), url(../../../assets/images/dawson.webp);
+        background-size: cover;
+        background-position: center;
+        height: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .info{
+        color: white;
+        padding-left: 10px;
+        text-align: center;
+      }
+    }
+  }
+
+  .coming-week{
+    margin-top: 30px;
+    .coming-event{
+      width: 100%;
+      background-image: url(../../../assets/images/prayer.jpg);
+      background-size: cover;
+      color: white;
+      padding: 25px;
+    }
+  }
+
+  .upcoming{
+    .events{
+      background: linear-gradient(135deg, rgb(187 232 237 / 14%), rgba(255, 255, 255, 0.15));
+      backdrop-filter: blur(7px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: -5px 7px 10px 8px #112d322b;
+      padding: 30px;
+      border-radius: 20px;
+      color: white;
+      font-size: 13px;
+      height: 100%;
+
+      .event{
+        background-color: #112D32;
+        margin-top: 30px;
+        height: 80px;
+
+        .thumbnail{
+          padding-left: 0;
+        }
+        .date{
+          background-color: #6E6658;
+          float: right;
+          margin-right: 10px;
+          margin-top: -15px;
+          width: 60px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .info{
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
 }
