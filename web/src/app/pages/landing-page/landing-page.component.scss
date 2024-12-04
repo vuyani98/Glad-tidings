@@ -3,9 +3,10 @@
   top: 0;
   left: 0;
   width: 100%;
+  padding: 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content:space-around;
   align-items: center;
   background: radial-gradient(#113a5587, #000000e8), url(../../../assets/images/smiles.jpg);
   background-size: cover;
@@ -16,17 +17,14 @@
   font-family: 'Poppins';
 
   .slide{
-    text-align: center;
-    margin-right: 25%;
-    margin-left: 25%;
-    width: auto;
-
+    width: 40%;
     .headline{
       font-family: "Playfair Display";
       font-size: 60px !important;
-
     }
+  }
 
+  .right{
     button{
       color: white;
       width: 170px;
@@ -43,9 +41,48 @@
 }
 
 .main-body{
-  display: flex;
   margin-top: 50px;
   margin-bottom: 50px;
+
+  .greeting{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .quote{
+      width: 40%;
+      font-family: 'Poppins';
+      font-weight: bold;
+      font-style: italic;
+      text-align: justify;
+      font-size: x-large;
+    }
+
+    .pastor{
+      text-align: center;
+    }
+  }
+
+  .invitation{
+    text-align: center;
+
+    .in-person-img, .online-img{
+      background-size: cover;
+      color: white;
+      margin: 20px ;
+      height: 250px;
+      width: 300px;
+    }
+
+    .in-person-img{
+      background-image: url('../../../assets/images/worship.jpg');
+    }
+
+    .online-img{
+      background-image: url('../../../assets/images/broadcast.jpg');
+    }
+  }
 
   .videos{
     display: flex;
@@ -79,8 +116,9 @@
       width: 100%;
       background-image: url(../../../assets/images/prayer.jpg);
       background-size: cover;
+      background-position: center;
       color: white;
-      padding: 25px;
+      padding: 7%;
     }
   }
 
