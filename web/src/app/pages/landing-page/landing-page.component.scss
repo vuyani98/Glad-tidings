@@ -8,19 +8,25 @@
   flex-wrap: wrap;
   justify-content:space-around;
   align-items: center;
-  background: radial-gradient(#113a5587, #000000e8), url(../../../assets/images/smiles.jpg);
+  background: radial-gradient(#0000007d, #0000007d), url(../../../assets/images/smiles.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 80vh;
+  height: 85vh;
   color: white;
   font-family: 'Poppins';
 
   .slide{
-    width: 40%;
     .headline{
-      font-family: "Playfair Display";
+      text-align: center;
+      font-family: "Roboto";
+      font-weight: bold;
       font-size: 60px !important;
+    }
+    .sub-headline{
+      font-family: 'Nunito';
+      font-weight: lighter;
+      color: #ffffffc9;
     }
   }
 
@@ -40,9 +46,35 @@
 
 }
 
+.call-btn{
+  border: none;
+  padding-inline: 20px;
+  padding-block: 5px;
+  border-radius: 15px;
+  background-color: #0098FA;
+  color: white;
+  font-family: 'Nunito';
+  letter-spacing: 1px;
+}
+
+.invite-underline {
+  width: 40px;
+  height: 1px;
+  background: black;
+  margin-inline: 0;
+  margin-block: 5px;
+}
+
+.body-headers {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 30px;
+}
+
 .main-body{
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  text-align: center;
 
   .greeting{
     display: flex;
@@ -66,22 +98,36 @@
 
   .invitation{
     text-align: center;
+    margin-block-start: 50px;
 
-    .in-person-img, .online-img{
-      background-size: cover;
+    .invite-card{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 275px;
+      width: 320px;
+      margin: 20px;
+      border-radius: 20px;
+    }
+    .invite-btn{
+      background: #0098FA;
+      font-family: 'Nunito';
       color: white;
-      margin: 20px ;
-      height: 250px;
-      width: 300px;
+      border: none;
+      padding-inline: 20px;
+      padding-block: 5px;
     }
 
-    .in-person-img{
-      background-image: url('../../../assets/images/worship.jpg');
+    .in-person{
+      background: radial-gradient(#0000007d, #0000007d), url('../../../assets/images/worship.jpg');
+      background-size: cover;
     }
 
-    .online-img{
-      background-image: url('../../../assets/images/broadcast.jpg');
+    .online{
+      background-image: radial-gradient(#0000007d, #0000007d), url('../../../assets/images/broadcast.jpg');
+      background-size: cover;
     }
+
   }
 
   .videos{

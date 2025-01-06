@@ -1,9 +1,8 @@
 #header{
   z-index: 1;
-  position: absolute;
   width: 100%;
   background-color: white;
-  height: 85px;
+  height: 70px;
   padding: 10px;
   nav{
     height: 100%;
@@ -14,19 +13,20 @@
       float: left;
 
       #logo-text{
-        font-family: 'Oswald';
-        font-size: 18px;
+        font-family: 'Inter';
         margin-left: 10px;
         color: #0E153A;
 
         .top{
-          font-weight: bold;
+          font-weight: bolder;
+          font-size: 12px;
+          letter-spacing: 1px;
         }
 
         .bottom{
-          letter-spacing: 0.16em;
-          font-size: 15px;
-          margin-top: -5px;
+          font-weight: lighter;
+          letter-spacing: 3px;
+          font-size: 10px;
         }
       }
     }
