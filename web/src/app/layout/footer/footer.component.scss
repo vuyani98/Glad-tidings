@@ -5,9 +5,7 @@ footer{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  color: white;
   text-align: center;
-  background-color: #88BDBC;
   font-family: 'Poppins';
 
   .heading{
@@ -15,8 +13,48 @@ footer{
     margin: 15px;
   }
 
+  #logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    float: left;
+
+    #logo-text{
+      font-family: 'Inter';
+      margin-left: 10px;
+      color: #0E153A;
+
+      .top{
+        font-weight: bolder;
+        font-size: 12px;
+        letter-spacing: 1px;
+      }
+
+      .bottom{
+        font-weight: lighter;
+        letter-spacing: 3px;
+        font-size: 10px;
+      }
+    }
+  }
+
+
   p{
     font-size: 13px;
   }
+
+  .icon {
+    height: 30px;
+    width: 30px;
+    margin-inline: 5px;
+    border: 1px solid black;
+    border-radius: 50%;
+  }
 }
 
+#bottom-line {
+  margin-block: 50px;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.74);
+}

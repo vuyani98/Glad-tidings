@@ -13,3 +13,8 @@ body{
   font-family: 'Inter';
   overflow-x: hidden;
 }
+
+.limit-width {
+  width: 80vw;
+  max-width: 1200px;
+}
