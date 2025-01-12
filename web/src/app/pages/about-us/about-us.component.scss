@@ -1,0 +1,15 @@
+.about-hero {
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../assets/images/IMG_0001\ \(2\)-Pano.jpg');
+  background-position: bottom;
+  background-size: cover;
+  padding-inline: 20%;
+  padding-block: 5%;
+
+  .verse {
+    font-family: 'Nunito';
+    font-weight: lighter;
+    font-size: 28px;
+    color: white;
+  }
+}
