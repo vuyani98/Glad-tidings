@@ -1,6 +1,6 @@
 .about-hero {
   height: 90vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../assets/images/IMG_0001\ \(2\)-Pano.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../../assets/images/IMG_0001\ \(2\)-Pano.jpg');
   background-position: bottom;
   background-size: cover;
   padding-inline: 20%;
@@ -8,8 +8,137 @@
 
   .verse {
     font-family: 'Nunito';
-    font-weight: lighter;
-    font-size: 28px;
+    font-weight: 100;
+    font-size: 25px;
+    color: #ffffff96;
+  }
+
+  .verse-name{
     color: white;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 28px;
+
   }
 }
+
+.beliefs{
+
+  width: 80%;
+  margin-inline: auto;
+  margin-block: 100px;
+
+  .underline{
+    width: 40px;
+    height: 1px;
+    background: black;
+    margin-inline: 0;
+    margin-block: 5px;
+  }
+
+  .our-story, .what-we-believe, .vision{
+    width: 80%;
+    margin-inline: auto;
+    margin-block: 50px;
+  }
+
+  .our-story{
+
+    p{
+      font-family: 'Nunito';
+      font-size: 16px;
+    }
+
+    .story-pics {
+      display: flex;
+      justify-content: space-between;
+      margin-block: 20px;
+
+      img {
+        width: 30%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  .what-we-believe{
+    margin-top: 100px;
+  }
+
+}
+
+.subheadings {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 24px;
+}
+
+table {
+
+  margin-block: 50px;
+  border-collapse: collapse;
+  border-style: hidden;
+
+  tr {
+
+    td{
+      border: 1px solid black;
+      width: 30%;
+      vertical-align: top;
+      padding: 15px;
+
+      h3{
+        font-family: 'Nunito';
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      p{
+        font-family: 'Nunito';
+        font-size: 12px;
+      }
+
+    }
+  }
+}
+
+.vision {
+
+  .vision-verse{
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-block: 50px;
+
+    h1{
+      font-family: 'Roboto';
+      font-weight: bold;
+    }
+
+    p{
+      font-family: 'Nunito';
+      font-size: 16px;
+      font-style: italic;
+      font-weight: 100;
+      padding: 10px;
+    }
+  }
+
+
+  .picture-pad {
+
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
+    height: fit-content;
+    padding: 10px;
+
+    img {
+      height: 90px;
+      padding: 5px;
+    }
+
+  }
+}
+
