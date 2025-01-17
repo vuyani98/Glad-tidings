@@ -1,0 +1,41 @@
+// resources.component.scss
+
+.resources-page {
+  padding: 20px;
+  background-color: #f9f9f9;
+
+  .header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .resource-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    .resource-item {
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+
+      &:hover {
+        background-color: #f1f1f1;
+      }
+
+      .resource-title {
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .resource-description {
+        font-size: 14px;
+        color: #666;
+      }
+    }
+  }
+}

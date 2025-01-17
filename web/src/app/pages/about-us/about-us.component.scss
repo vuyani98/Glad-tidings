@@ -110,8 +110,7 @@ table {
 
     display: flex;
     justify-content: space-evenly;
-    width: 50%;
-    margin-block: 50px;
+    margin-bottom: 50px;
 
     h1{
       font-family: 'Roboto';
@@ -124,19 +123,21 @@ table {
       font-style: italic;
       font-weight: 100;
       padding: 10px;
+      text-align: center;
     }
   }
 
 
   .picture-pad {
 
-    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
     height: fit-content;
     padding: 10px;
+    margin-top: 50px;
 
     img {
-      height: 90px;
+      width: 35%;
       padding: 5px;
+      border-radius: 15px;
     }
 
     div {
@@ -146,4 +147,40 @@ table {
 
   }
 }
+#ministries {
+  background: black;
+  width: 100vw;
+  margin-bottom: 100px;
 
+  #inner-ministries {
+    width: 80%;
+    color: white;
+    margin-inline: auto;
+    padding-block: 40px;
+
+    .picture-pad{
+      display: flex;
+      justify-content: space-between;
+      margin-block: 50px;
+
+      img {
+        width: 32%;
+        border-radius: 15px;
+      }
+    }
+
+    ul {
+      margin-block: 40px;
+
+      p{
+        font-family: 'Nunito';
+        font-size: 16px;
+        font-weight: 100;
+      }
+
+      .strong{
+        font-weight: 600;
+      }
+    }
+  }
+}
