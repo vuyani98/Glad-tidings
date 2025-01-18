@@ -8,6 +8,7 @@ import { LayoutService } from '../layout/layout.service';
 import { PagesService } from './pages.service';
 import { ResourcesComponent } from './resources/resources.component';
 import { SupportComponent } from './support/support.component';
+import { RehobothComponent } from './rehoboth/rehoboth.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { SupportComponent } from './support/support.component';
     LandingPageComponent,
     AboutUsComponent,
     ResourcesComponent,
-    SupportComponent
+    SupportComponent,
+    RehobothComponent
   ],
   imports: [
     CommonModule,
