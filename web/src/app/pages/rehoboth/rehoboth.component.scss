@@ -1,0 +1,143 @@
+#rehoboth-hero{
+
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10%;
+
+  .left {
+
+    h1{
+      font-family: 'Inter';
+      font-size: 60px;
+      font-weight: bold;
+    }
+    p{
+      font-size: 20px;
+      font-weight: 100;
+      font-family: 'Nunito';
+    }
+
+    .buttons{
+
+      button {
+        padding-inline: 20px;
+        padding-block: 8px;
+        border-radius: 15px;
+        border: none;
+        margin: 10px;
+      }
+
+      #enroll-btn {
+        background-color: #0098FA;
+        color: white;
+      }
+
+      #call-btn {
+        background: none;
+        border: 1px solid #000B18;
+        color: #000B18;
+      }
+
+    }
+  }
+
+  .right {
+
+    height: 100%;
+
+    img {
+      height: 60vh;
+    }
+  }
+
+}
+
+#rehoboth-body {
+
+  width: 80%;
+  margin-inline: auto;
+  margin-block: 100px;
+
+  .header-container{
+    display: flex;
+
+    img {
+      margin-inline-end: 20px;
+    }
+  }
+
+}
+
+.subjects {
+  margin-top: 50px;
+  display: flex;
+
+  ul {
+    margin-right: 100px;
+
+    li {
+      margin-block: 5px;
+    }
+  }
+}
+
+#mission-statement {
+
+  margin-top: 100px;
+
+  p{
+    margin-top: 50px;
+    font-size: 20px;
+  }
+}
+
+
+#enquiries{
+  margin-top: 100px;
+
+  #form {
+    margin-top: 50px;
+    width: 60%;
+    max-width: 800px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    padding-block: 25px;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+    }
+
+    .input {
+
+      background: rgb(211, 211, 211);
+      width: 80%;
+      padding-inline: 20px;
+      padding-block: 10px;
+      margin-block: 10px;
+
+      input, textarea{
+        border: none;
+        color: #000B18;
+        background: none;
+      }
+    }
+
+    #submit {
+      color: white;
+      background-color: #0098FA;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+
+      input{
+        color: white;
+        text-align: center;
+      }
+    }
+  }
+}
