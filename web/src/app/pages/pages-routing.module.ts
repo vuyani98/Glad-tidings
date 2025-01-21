@@ -4,12 +4,14 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { RehobothComponent } from './rehoboth/rehoboth.component';
+import { SupportComponent } from './support/support.component';
 
 const routes: Routes = [
   { path: '', component:  LandingPageComponent},
   { path: 'about', component: AboutUsComponent},
   { path: 'resources', component: ResourcesComponent},
-  { path: 'rehoboth', component: RehobothComponent}
+  { path: 'rehoboth', component: RehobothComponent},
+  { path: 'support', component: SupportComponent}
 ];
 
 @NgModule({
