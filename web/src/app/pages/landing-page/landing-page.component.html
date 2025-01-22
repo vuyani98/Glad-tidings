@@ -1,5 +1,5 @@
 <div class="hero">
-  <div class="slide left" id="slide1">
+  <div class="slide left" id="slide1" *ngIf="slideIndex == 0" [@slide]="slideIndex == 0 ? 'shown' : 'hidden' " >
     <h1 class="headline">
       We preach the
     </h1>
@@ -15,6 +15,25 @@
     </span>
     <div style="display: flex; justify-content: center; margin-block: 15px;">
       <button class="call-btn">Call Us <img src="../../../assets/images/phone.png" alt="" height="20px" style="transform: rotateZ(278deg);" ></button>
+    </div>
+  </div>
+
+  <div class="slide" id="slide2" *ngIf="slideIndex == 1" [@slide]="slideIndex == 1 ? 'shown' : 'hidden' ">
+
+    <div class="left">
+      <div>
+        <img src="../../../assets/images/rehologo.png" height="100px" alt="">
+      </div>
+      <h1 class="headline" style="font-size: 40px !important;">"We develop the whole person"</h1>
+      <div style="text-align: center;">Rehoboth School Of Excellence</div>
+      <div id="buttons">
+        <button id="color-btn">learn more</button>
+        <button id="border-btn">call us</button>
+      </div>
+    </div>
+
+    <div class="right">
+
     </div>
 
   </div>

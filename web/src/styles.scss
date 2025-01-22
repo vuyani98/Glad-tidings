@@ -30,3 +30,23 @@ body{
   font-weight: bold;
   font-size: 24px;
 }
+
+@keyframes fade-in {
+
+  from {
+  display: none;
+  opacity: 0;
+  filter: blur(2px);
+  transform: translateX(20px)
+}
+
+
+to{
+  display: flex;
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0px);
+}
+}
+
+
