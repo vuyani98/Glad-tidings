@@ -43,7 +43,7 @@ export class LandingPageComponent implements OnInit {
 
   ngOnInit(): void {
 
-    setTimeout(() => { this.slideIndex +=1 }, 1500)
+   setTimeout(() => { this.slideIndex +=1 }, 1500)
 
     setInterval(() => {
 
@@ -55,6 +55,7 @@ export class LandingPageComponent implements OnInit {
       }
 
     }, 7000)
+
   }
 
   ngOnDestroy(): void {

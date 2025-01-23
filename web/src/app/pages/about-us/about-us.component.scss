@@ -184,3 +184,54 @@ table {
     }
   }
 }
+
+#mobile-table, #mobile-pad {
+  display: none;
+}
+
+@media (max-width: 750px) {
+
+  #mobile-table {
+    display: block;
+  }
+
+  #pc-table {
+    display: none;
+  }
+
+  .about-hero {
+    height: 75vh;
+    padding-inline: 7%;
+    padding-block: 30%;
+
+    .verse {
+      font-size: 16px;
+    }
+  }
+
+  .beliefs {
+    width: 90%;
+
+    #pc-pad {
+      display: none;
+    }
+
+    .vision #mobile-pad{
+
+        display: flex;
+        justify-content: center;
+        img {
+          width: 35%;
+          height: 300px;
+          object-fit: cover;
+          border-radius: 20px;
+        }
+
+    }
+  }
+
+  .our-story, .what-we-believe, .vision, #inner-ministries {
+    width: 90% !important;
+  }
+
+}

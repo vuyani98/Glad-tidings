@@ -178,3 +178,61 @@
     background-image: url('../../../assets/images/uniform2.jpeg');
   }
 }
+
+@media (max-width: 750px) {
+
+  #rehoboth-hero{
+    padding: 20px;
+    height: fit-content;
+    flex-direction: column-reverse;
+
+    .left{
+      margin-block: 20px;
+      text-align: center;
+
+      h1{
+        font-size: 40px !important;
+      }
+    }
+
+    .right {
+
+      img {
+        height: 40vh;
+      }
+    }
+  }
+
+  #rehoboth-body {
+    width: 90%;
+  }
+  .subjects {
+    flex-direction: column;
+
+    ul{
+      margin-right: 0px;
+    }
+  }
+
+  #mission-statement{
+
+    p{
+      font-size: 14px;
+    }
+  }
+
+  #Uniform-gallery {
+    flex-wrap: wrap;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+
+    .uniform {
+      margin-block: 20px;
+    }
+  }
+
+  #form{
+    width: 100% !important;
+  }
+}
