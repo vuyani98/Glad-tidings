@@ -60,4 +60,10 @@ export class LandingPageComponent implements OnInit {
 
   ngOnDestroy(): void {
   }
+
+  directions() {
+    let el = document.getElementById('googleMap');
+
+    el?.scrollIntoView({behavior: 'smooth'});
+  }
 }

@@ -189,6 +189,30 @@ table {
   display: none;
 }
 
+.support {
+  width: 80%;
+  margin-inline: auto;
+  margin-bottom: 100px;
+
+  .underline{
+    width: 40px;
+    height: 1px;
+    background: black;
+    margin-inline: 0;
+    margin-block: 5px;
+  }
+}
+
+.acc-details {
+  display: flex;
+  font-size: 14px;
+
+  h5 {
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 750px) {
 
   #mobile-table {

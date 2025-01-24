@@ -14,7 +14,7 @@
          <span id="strong-sub-headline" style="color: white; font-weight: 600 !important; font-family: 'Poppins' !important;"> - Matthew 28 v 19</span>
     </span>
     <div style="display: flex; justify-content: center; margin-block: 15px;">
-      <button class="call-btn">Call Us <img src="../../../assets/images/phone.png" alt="" height="20px" style="transform: rotateZ(278deg);" ></button>
+      <button class="call-btn"> <a href="tel:+263292888285" style="color: white !important;">Call Us</a> <img src="../../../assets/images/phone.png" alt="" height="20px" style="transform: rotateZ(278deg);" ></button>
     </div>
     <div class="mobile-img">
       <img src="../../../assets/images/smiles.jpg" alt="" height="350px">
@@ -30,8 +30,8 @@
       <h1 class="headline gradient-text" style="font-size: 40px !important;">"We develop the whole person"</h1>
       <div style="text-align: center;">Rehoboth School Of Excellence</div>
       <div id="buttons">
-        <button id="color-btn">learn more</button>
-        <button id="border-btn">call us</button>
+        <button id="color-btn"> <a routerLink="rehoboth">learn more</a> </button>
+        <button id="border-btn"><a href="tel:+263292888285" >Call Us</a></button>
       </div>
       <div class="mobile-img">
         <img src="../../../assets/images/uniform22.jpeg" alt="" height="350px">
@@ -63,7 +63,7 @@
             <hr class="invite-underline">
           </div>
           <div class="in-person invite-card">
-              <button class="invite-btn">Get Directions</button>
+              <button class="invite-btn" (click)="directions()">Get Directions</button>
           </div>
         </div>
 
@@ -147,5 +147,8 @@
 
   </div>
 
-
+  <div id="googleMap"  style="width:100%;height:400px;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d321.68534236630086!2d28.582634774353842!3d-20.14302830797373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s18%20herbert%20chitepo%20street%20and%20connaught%20avenue!5e1!3m2!1sen!2szw!4v1737717774355!5m2!1sen!2szw" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
 </div>
+''

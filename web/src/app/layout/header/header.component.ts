@@ -149,4 +149,8 @@ export class HeaderComponent implements AfterViewInit {
   go_home(){
     this.route.navigateByUrl('/')
   }
+
+  support(){
+    this.route.navigate(['about'], {fragment: 'support'})
+  }
 }
