@@ -328,6 +328,38 @@
   display: none;
 }
 
+#in-person-invite:hover{
+
+  .invite-underline{
+    width: 80px;
+    background: #0098FA;
+    animation: grow 0.6s;
+  }
+}
+
+#online-invite:hover{
+
+  .invite-underline{
+    width: 80px;
+    background-color: #0098FA;
+    animation: grow 0.6s;
+  }
+}
+
+@keyframes grow{
+  from{
+    width: 40px;
+  }
+
+  to{
+    width: 80px;
+  }
+}
+
+button{
+  border-radius: 15px;
+}
+
 @media (max-width : 750px) {
 
   .hero {

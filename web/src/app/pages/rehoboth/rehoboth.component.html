@@ -8,8 +8,8 @@
 
     <div class="buttons">
 
-      <button id="enroll-btn">enroll now</button>
-      <button id="call-btn">call us</button>
+      <!--<button id="enroll-btn">enroll now</button> -->
+      <button id="enroll-btn"><a href="tel:+263292888285" >Call Us</a></button>
 
     </div>
 
@@ -90,26 +90,29 @@
     </div>
 
     <div id="form">
-      <form action="">
+      <form [formGroup]="enquiryForm" (submit)="onSubmit()">
 
         <div class="input">
-           Name: <input type="text">
+           Name: <input type="text" id="name" formControlName="name" required >
         </div>
 
         <div class="input">
-          Email Address: <input type="text">
+          Email Address: <input type="text" id="email" formControlName="email">
         </div>
 
         <div class="input">
-          Phone Number: <input type="tel">
+          Phone Number: <input type="tel" id="phone" formControlName="phone">
         </div>
 
         <div class="input">
-          <textarea name="question" id="question" placeholder="Enquiry:"></textarea>
+          <textarea name="question" id="question" formControlName="enquiry" placeholder="Enquiry:" required></textarea>
         </div>
 
         <div class="input" id="submit">
-          <input type="submit" value="Submit Enquiry">
+          <input *ngIf="!isLoading" type="submit" value="Submit Enquiry">
+          <div *ngIf="isLoading">
+            <mat-spinner></mat-spinner>
+          </div>
         </div>
 
       </form>
