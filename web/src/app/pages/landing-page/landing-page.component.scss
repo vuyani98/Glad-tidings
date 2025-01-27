@@ -8,8 +8,12 @@
   font-family: 'Poppins';
   box-shadow: 0px 11px 20px 3px rgb(149 149 149 / 14%);
 
+  h1 {
+    margin-block: 10px !important;
+  }
+
   #slide1 {
-    background: radial-gradient(#0000007d, #0000007d), url(../../../assets/images/smiles_50.jpg);
+    background: radial-gradient(#0000007d, #0000007d), url(../../../assets/images/smiles.jpg);
     padding: 30px;
     width: 100%;
     height: 100%;

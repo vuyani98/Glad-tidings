@@ -32,10 +32,11 @@ body{
 }
 
 .gradient-text {
+  -webkit-text-fill-color: transparent;
   background: #06233A;
   background: linear-gradient(to right, #06233A 0%, #0098FA 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
 }
 
 .animate{
