@@ -207,6 +207,7 @@
     width: 90%;
   }
   .subjects {
+    margin-top: 25px;
     flex-direction: column;
 
     ul{
@@ -216,9 +217,16 @@
 
   #mission-statement{
 
+    margin-top: 40px;
+
     p{
+      margin-top: 20px;
       font-size: 14px;
     }
+  }
+
+  #unifom-outer {
+    margin-top: 40px;
   }
 
   #Uniform-gallery {
@@ -226,6 +234,7 @@
     height: fit-content;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 
     .uniform {
       margin-block: 20px;
@@ -234,5 +243,13 @@
 
   #form{
     width: 100% !important;
+  }
+
+  #enquiries{
+    margin-top: 50px;
+
+    #form {
+      margin-top: 25px;
+    }
   }
 }

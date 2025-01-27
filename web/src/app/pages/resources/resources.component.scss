@@ -175,6 +175,13 @@ a {
 
     .library-info {
       width: auto;
+      padding: 0px;
+      padding-block: 20px;
+
+      .body-headers{
+        font-size: 35px !important;
+        margin-block: 20px !important;
+      }
     }
 
     .library-image {

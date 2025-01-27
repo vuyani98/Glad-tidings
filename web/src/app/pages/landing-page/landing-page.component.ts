@@ -37,13 +37,13 @@ import { animate, keyframes, style } from '@angular/animations'
 })
 export class LandingPageComponent implements OnInit {
 
-  slideIndex = 0;
+  slideIndex = 1;
 
   constructor( private service: LayoutService) { }
 
   ngOnInit(): void {
 
-   setTimeout(() => { this.slideIndex +=1 }, 1500)
+   /*setTimeout(() => { this.slideIndex +=1 }, 1500)
 
     setInterval(() => {
 
@@ -54,7 +54,7 @@ export class LandingPageComponent implements OnInit {
         this.slideIndex += 1;
       }
 
-    }, 7000)
+    }, 7000) */
 
   }
 
