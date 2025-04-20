@@ -2,6 +2,7 @@ import { state, transition, trigger } from '@angular/animations';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { LayoutService } from 'src/app/layout/layout.service';
 import { animate, keyframes, style } from '@angular/animations'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-landing-page',
@@ -39,7 +40,7 @@ export class LandingPageComponent implements OnInit {
 
   slideIndex = 1;
 
-  constructor( private service: LayoutService) { }
+  constructor( private service: LayoutService, private route: Router) { }
 
   ngOnInit(): void {
 
@@ -65,5 +66,10 @@ export class LandingPageComponent implements OnInit {
     let el = document.getElementById('googleMap');
 
     el?.scrollIntoView({behavior: 'smooth'});
+  }
+
+  onApplyNow(){
+
+    this.route.navigate(['/rehoboth'], { fragment: 'application-form' } );
   }
 }

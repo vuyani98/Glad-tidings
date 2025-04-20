@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
+import { ActivatedRoute, ActivatedRouteSnapshot } from '@angular/router';
 import emailjs from '@emailjs/browser';
 
 @Component({
@@ -16,11 +17,34 @@ export class RehobothComponent implements OnInit {
     'enquiry': ''
   })
 
+  applicationForm = this.formBuilder.group({
+    'name': '',
+    'email': '',
+    'phone': '',
+    'application':'',
+    'results': ''
+  })
+
   isLoading = false;
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder, private router: ActivatedRoute ) { }
 
   ngOnInit(): void {
+
+
+    if(this.router.fragment) {
+
+      this.router.fragment.forEach((fragment) => {
+
+
+        if (fragment == 'application-form') {
+          setTimeout(() => {
+            document.getElementById('application-form')?.scrollIntoView({ behavior: 'smooth' });
+          }, 1000)
+        }
+      })
+
+    }
   }
 
   onSubmit() {

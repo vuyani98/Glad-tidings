@@ -118,6 +118,45 @@
       </form>
     </div>
 
+    <div class="header-container" style="margin-top: 100px;">
+      <img src="../../../assets/images/applicationForm.png" height="30px" alt="">
+      <h3 class="body-headers">Application:</h3>
+    </div>
+
+    <div id="form">
+      <form [formGroup]="applicationForm" id="application-form" (submit)="onSubmit()">
+
+        <div class="input">
+           Name: <input type="text" id="name" formControlName="name" required >
+        </div>
+
+        <div class="input">
+          Email Address: <input type="text" id="email" formControlName="email">
+        </div>
+
+        <div class="input">
+          Phone Number: <input type="tel" id="phone" formControlName="phone">
+        </div>
+
+        <div class="input">
+          Application Letter: <input type="file" id="application" formControlName="application" required>
+        </div>
+
+        <div class="input">
+          Previous Term Results: <input type="file" id="application" formControlName="results" required>
+        </div>
+
+        <div class="input" id="submit">
+          <input *ngIf="!isLoading" type="submit" value="Submit Application">
+          <div *ngIf="isLoading">
+            <mat-spinner></mat-spinner>
+          </div>
+        </div>
+
+      </form>
+    </div>
+
+
   </div>
 
 </div>
